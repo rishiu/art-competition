@@ -1,0 +1,228 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Rancho&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>🎨 COMPSCI 184/284A Project 1 <span class="highlight">Art&nbsp;Competition</span></h1>
+		<p>We've received 15 entries from you all in the first project art competition 🔆</p>
+		<p>Please enjoy a gallery of the artworks and then vote for your favorites!</p>
+		<p>When voting, please consider both the artistic quality <strong>and</strong> the creative process taken to achieve the artwork.</p>
+		<div class="artworks">
+		<div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">J</div>
+		<img src="artworks/rainbow_triangles.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Rainbow Triangles ("Rota-Arrow Triangles"). Stacked and rotated triangles of different colors.</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I decided to experiment with rotation and color in my submission. So I created this image with multiple triangles, each scaled by 10 degrees and scaled by 0.85. I colored each triangle with a different color (represented in hexadecimal).</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>It took me 2-3 hours to understand the provided SVG files in order to derive my own artwork. I experimented with different colors and rotation angles to build the final product.</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">D</div>
+		<img src="artworks/oskicat.gif">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>.･:*:･｡☆｡･:*:･ʕ ᵒᴥᵒʔ</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I downloaded pictures of Oski and Nyan Cat, then drew and colored triangles over them with Adobe Illustrator. I created 6 frames total and exported each of them as an svg, then used RegEx to convert the svg into a readable format for the project. I then rendered each frame at a resolution of 800x800 with a sample rate of 16 and stitched them together to make my GIF.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>4-6 hours</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">E</div>
+		<img src="artworks/class_character.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>184 Class Character Concept Art. Elements: Berkeley color palette, triangle hair, camera eyes, teapot:), and ray guns!</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I drew it inside adobe illustrator (using only polygons. it's very hard lol). Then I exported SVG file with SVG 1.1. There are a lot of choices when exporting, and I experimented for a long time to find the version that works with our rasterizer. (If the course staff want to include this to help future semesters, the combination that finally worked are: SVG1.1, Styling: Internal CSS, Fonts Type: Convert to Outline, Image Location: Preserve, Object IDs: Minimal, check Minify, Uncheck Responsive)</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>5 hrs</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">T</div>
+		<img src="artworks/space_light.gif">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>It is the best of light. It is the worst of light. --Space light</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I write a python to generate the code. It generates numbers of "lights" and rotates and scales them randomly. I repeatedly generate it from a small number of lights to large and put all screenshots as a GIF by an online animated GIF Maker.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>8 hours</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">A</div>
+		<img src="artworks/first_look.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Let's imagine what's the first look on the earth!</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I create the graph by using line, polyline and polygon elements in svg. I need to find the appropriate points for the elements. So that they can look like real objects, like a tree. To fill in the colors of background, I create polygon fit exactly to the place I want to paint, like the sky. And then fill the polygon with color.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>I spend 1-2 hours to do it. </p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">N</div>
+		<img src="artworks/lynel.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>This is a Golden Lynel. Lynels are an iconic centaur-like monster in The Legend of Zelda: Breath of the Wild</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>The photo was hand traced in Illustator over a reference image and exported as an svg file. Some modifications to the file were needed for compatibility with Project 1’s svg parser. </p> <hr>
+		<h3>How long did it take?</h3>
+		<p>About an hour. </p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">H</div>
+		<img src="artworks/dragon.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Crescendo of hues / Scarlet flames dance and rejoice / No magenta here!</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>T1. Create the SVG in Adobe Illustrator:
+		1.1. Create a new 800x800px file with default settings.
+		1.2. Use the polygon tool to put down a simple polygon (e.g. square). Use the pen tool to add anchor points on the edge of the polygon, and hold down Cmd to drag the points to the desired location.
+		1.2.1. Repeat this process, using polygons to block out shapes that compose the picture.
+		1.2.2. It is recommended to start with polygons with no fill and a bright-colored stroke for visibility. Once all of the polygons have been put down, their colors and strokes can be replaced appropriately.
+		1.2.3. Take care not to accidentally create curved paths using the pen tool.
+		1.3. Ensure that all polygons lie completely within the artboard.
+		1.4. Export the artboard using Export for Screens...
+		1.4.1. Select SVG as the format.
+		1.4.2. In Format Settings, make sure that Styling (under SVG) is set to "Presentation Attributes".
+		2. Once the SVG has been exported from Illustrator, further processing is necessary in a text editor:
+		2.1. Using regex, find (\s(\d+)(\.?)(\d*?))\s and replace with ,$1 (there is a space at the end of ,$1 )
+		2.1.1. This inserts commas between points in a format expected by the rasterizer.
+		2.2. Using regex, find (\d+)(\.?)(\d*?)" fill= and replace with " fill=
+		2.2.1. This deletes the last number in the list of points for each polygon. If this number is not deleted, then the rasterizer will not fill in one of the triangles for each polygon.
+		2.2.2. If there is a rect element, its height may accidentally be deleted by this regex. To prevent this, use only polygons instead of rects, or replace the height value after running the find/replace.
+		2.3. In the svg tag, insert x="0px" y="0px" width="800px" height="800px"
+		3. Save. The SVG is now ready to be displayed by the rasterizer!</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>5 hours</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">C</div>
+		<img src="artworks/raven.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Raven</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I recreated an image of a raven writing the SVG file by hand. The original picture can be found here: 
+https://www.vectorstock.com/royalty-free-vector/black-raven-bird-in-low-polygon-art-vector-16153592
+I grabbed a screenshot and imported the image in AutoCAD. I drew the triangle vertices at the appropriate places and then I copied and pasted the coordinate values in the svg file one by one. I used the Photoshop’s eyedrop tool to get the hex color codes for my triangles.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>It took an entire afternoon.</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">M</div>
+		<img src="artworks/campanile.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Go Bears!</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>This Campanile was drawn by manually playing with triangles in an SVG. It started its life as a cube-bot! Most shapes are simple triangles. The arches are attempts to draw semi-circles, but manually specifying semi-circle points was a pain... The clock is done by rotating a segment 30 degrees at a time.</h3>
+		<h3>How long did it take?</h3>
+		<p>1.5ish hours</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">S</div>
+		<img src="artworks/one_line.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>woman and child in one line. one lifeline continues into another. </p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I used Adobe Illustrator's pen tool to make a vector graphic of this one line until I got it to a place I was happy with.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>about an hour</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">P</div>
+		<img src="artworks/lupus.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>It's never lupus.</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>My intention was to create triangles that were inscribed in each other one by one, but then I randomized some of the coordinates and put some fancy colors. In this case, I calculated the coordinates necessary for each triangle, did appropriate transformations to move the triangles in the position. Then I added some noise to the transformations to give it a more random chaotic feel.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>5 hours</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">G</div>
+		<img src="artworks/yea_it_is.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Yeah, it is.</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I coded it from scratch i.e. I directly coded inside an svg file.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>Like 20 minutes. </p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">Q</div>
+		 <img src="artworks/fire_spin.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Fire Spin</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>Put a spinning texmap on a campfire picture. </p> <hr>
+		<h3>How long did it take?</h3>
+		<p>10min</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">R</div>
+		<img src="artworks/rotate_denero.gif">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Spinning DeNero (what have I done...)</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>We first brainstormed what would be a good image to use for this project. For some reason, we decided to make a John DeNero ninja star because he is very memeable and particularly the good person for this project. We took inspiration from the warped svg texture map from the project to create the star.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>1 hour</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">L</div>
+		<img src="artworks/birds.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Bird Sampling!</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>We tried moving the polygons around to make a recognizable pattern. Then we colored it.  </p> <hr>
+		<h3>How long did it take?</h3>
+		<p>30 minutes of experimentation</p>
+		</div>
+		</div>
+	</body>
+</html>

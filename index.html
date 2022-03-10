@@ -4,65 +4,77 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Rancho&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>🎨 COMPSCI 184/284A Project 3 <span class="highlight">Art&nbsp;Competition</span></h1>
-		<p>We've received 4 entries from you all in the third project art competition 🔆</p>
+		<h1>🎨 COMPSCI 184/284A Project 1 <span class="highlight">Art&nbsp;Competition</span></h1>
+		<p>We've received 5 entries from you all in the first project art competition 🔆</p>
 		<p>Please enjoy a gallery of the artworks and then vote for your favorites!</p>
 		<p>When voting, please consider both the artistic quality <strong>and</strong> the creative process taken to achieve the artwork.</p>
 		<div class="artworks">
 		<div class="artwork">
 		<div class="artwork-image-container">
-		<div class="artwork-letter">J</div>
-		<img src="artwork/new_material.png">
+		<div class="artwork-letter">A</div>
+		<img src="artwork/triangles.png">
 		</div>
 		<div class="artwork-caption">
 		<h3>Caption</h3>
-		<p>solid material</p> <hr>
+		<p>A random boquet \ Three hundred eccentric shapes \ Exploding in space.</p> <hr>
 		<h3>How is the artwork created?</h3>
-		<p>I try different eta and k value to get a new material.</p> <hr>
+		<p>I used a very simple program to create colortris at completely random points with random color vertices. I weighted the values in such a way that they look like they're exploding from the top left corner. A bit of chaos to let off steam from the rigidity of building a rasterizer.</p> <hr>
 		<h3>How long did it take?</h3>
-		<p>I spend around 15min to explore</p>
-		</div>
-		</div><div class="artwork">
-		<div class="artwork-image-container">
-		<div class="artwork-letter">D</div>
-		<img src="artwork/oscar.jpeg">
-		</div>
-		<div class="artwork-caption">
-		<h3>Caption</h3>
-		<p>And the Oscar goes to...</p> <hr>
-		<h3>How is the artwork created?</h3>
-		<p>Download oscar model add shading and lighting and texture in blender</p> <hr>
-		<h3>How long did it take?</h3>
-		<p>5 hrs</p>
-		</div>
-		</div><div class="artwork">
-		<div class="artwork-image-container">
-		<div class="artwork-letter">E</div>
-		<img src="artwork/focus.gif">
-		</div>
-		<div class="artwork-caption">
-		<h3>Caption</h3>
-		<p>magnified, obscured<br>
-		a glittering bad dragon<br>
-		confusion circles</p><hr>
-		<h3>How is the artwork created?</h3>
-		<p>We used the Project 3-2 depth of field section to create the individual frames with varying focus distances to show how it would look if you manually focused a camera. Then, we implemented bash scripting in Linux to programatically generate all the frames without needing to manually send render commands for each of them. Finally, we stitched all the resulting png images together using FFmpeg. If we had more time, we'd also try to use bash scripting to log in on the hive machinese and do the rendering there.</p> <hr>
-		<h3>How long did it take?</h3>
-		<p>7 including rendering</p>
+		<p>30 min</p>
 		</div>
 		</div><div class="artwork">
 		<div class="artwork-image-container">
 		<div class="artwork-letter">B</div>
-		<img src="artwork/blindinglights.png">
+		<img src="artwork/kirby.png">
 		</div>
 		<div class="artwork-caption">
 		<h3>Caption</h3>
-		<p>Blinding Lights </p> <hr>
+		<p>buff kirby</p> <hr>
 		<h3>How is the artwork created?</h3>
-		<p>We used epic blender skills</p> <hr>
+		<p>To create this image, we fed a png into Geometrize (https://www.samcodes.co.uk/project/geometrize-haxe-web/) which converts our png into a svg composed of triangles. However, the svgparser included in this project only supports colors given in hex while Geometrize outputs colors in the format "rgb(r,g,b)" so we had to edit it in svgparser.cpp to allow support for this format.</p> <hr>
 		<h3>How long did it take?</h3>
-		<p>30 mins</p>
+		<p>40 minutes</p>
 		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">C</div>
+		<img src="artwork/transforms.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>Hinrichtung Ludwigs XVI - Vive la révolution!</p><hr>
+		<h3>How is the artwork created?</h3>
+		<p>I made it with Adobe Illustrator. Illustrator will use <rect> instead of <polygon> for rectangles when generating svg files. robot.svg bypassed this by using two triangles to form a rectangle. I bypassed this by adding a new anchor point for each rectangle, so Illustrator thought it’s actually a pentagon.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>~5 hours</p>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">D</div>
+		<img src="artwork/blobs.png">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>We created an approximate version of the Shepp Logan Phantom. This phantom serves as a simplified model for a human brain and is widely used to test image reconstruction algorithms in the field of medical imaging.</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>In order to create the figure, we needed to create ellipses. However, we do not have ellipses nor circles implemented in our SVG parser and rasterization. Therefore, we created our own unit circle polygon coordinates with 100 points using Python, and used this circle as our base shape to create the phantom. For each ellipse in the figure, we added scaling, rotation and translation, and use the respective color. In the pipeline, each circle polygon is converted to triangles that we then rasterize. Clearly, the number of points in the unit circle is a parameter that can be increased, but we saw decent results with 100 points.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>1-2 hours. Spent some time trying different approaches and getting the right proportions.</p>
+		</div>
+		</div>
+		</div>
+		</div><div class="artwork">
+		<div class="artwork-image-container">
+		<div class="artwork-letter">E</div>
+		<img src="artwork/jumping_jacks.gif">
+		</div>
+		<div class="artwork-caption">
+		<h3>Caption</h3>
+		<p>I didn't feel like exercising myself so Cubeman volunteered to do some jumping jacks for me!</p> <hr>
+		<h3>How is the artwork created?</h3>
+		<p>I built off of the transformations we implemented in the project and made 5 different svg files of cubeman in different positions. I also changed the colors to be a teal color. I used an online gif maker to stitch the 5 images together to create an animated gif.</p> <hr>
+		<h3>How long did it take?</h3>
+		<p>around 1-2 hours</p>
 		</div>
 		</div>
 	</body>
